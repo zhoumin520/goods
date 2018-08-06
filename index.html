@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/toolbar.png" alt="">
+    <!-- 全場優惠 -->
+    <div class="youhui">
+        <span>全場優惠</span>
+        <span>1/1</span>
+    </div>
+    <div class="quan">
+        <div class="quan_top">
+            <h2>全場滿300減10</h2>
+            <p>雙十一特價優惠全場滿就減</p>
+            <div class="shijian">
+                <span></span>
+                14-11-12 20:12 至 14-11-12 23:12
+            </div>
+            <span>即將開始</span>
+        </div>
+    </div>
+</body>
+<script>
+    onload=function(){
+        changer();
+    }
+    window.onresize=function(){
+        changer();
+    }
+   function changer(){
+        // 屏幕的寬度
+    var kuan=document.querySelector('html').offsetWidth;
+    // 設置的常量
+    var chang=100;
+    // 標準屏幕下的寬度
+    var shiji=640;
+    // 得到的HTML的字體大小
+    var bian=kuan*chang/shiji;
+    
+    document.querySelector('html').style.fontSize=bian+"px";
+   }
+</script>
+</html>
